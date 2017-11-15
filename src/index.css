@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#root {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+.airportApp__airportSelector {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: row;
+}
+
+.airportApp__airportSelector__selector {
+    flex: 2;
+    position: relative;
+    
+}
+
+.airportApp__airportSelector__selector__input {
+	width: 100%;
+	font-size: 1em;
+}
+.airportApp__airportSelector__selector__input:focus{
+	outline:none;
+}
+
+.airportApp__airportSelector__selector__dropdown {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.25);
+    width: 98.2%;
+    padding: 5px;
+    max-height: 200px;
+    overflow: scroll;
+    position: absolute;
+    top: 30px;
+    background: white;
+    z-index: 100;
+}
+.airportApp__airportSelector__selector__dropdown li{
+	padding: 5px 0
+}
+.airportApp__airportSelector__selector__dropdown li:hover{
+	background: #e3e3e3;
+}
+.airportApp__airportSelector__switch {
+    flex: 1;
+    text-align: center;
+    font-size: 2em;
+    margin-top: -8px;
+}
+.airportApp__distanceHolder{
+	text-align: center;
+	margin-top: 15px;
+    min-height: 21px;
+	
+}
+#map{
+    height: 500px;
+}
+.filteredAirports {}
