@@ -6,4 +6,4 @@ npm install && npm run start
 node airportFilter.js
 ```
 
-![alt text](./airporter.png)
+![airporter](Airporter.png)
