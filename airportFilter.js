@@ -10,6 +10,7 @@ app.use(cors());
 const USAirportsOnly = airports.filter(airport => airport.country == 'United States');
 
 app.get('/getData/:userString', (req, res) => {
+	debugger;
 	const filteredAirports = USAirportsOnly.filter(airport => {
 		//console.warn(`${airport.code} ${airport.name} ${airport.city} ${airport.state}`);
 		return (
